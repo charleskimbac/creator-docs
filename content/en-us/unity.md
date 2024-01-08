@@ -11,12 +11,12 @@ This page includes information to help experienced Unity developers get started 
 
 ![Overview of Roblox Studio](assets/unity/roblox-unity-studio-markup.png)
 
-Unity's hierarchy view and Roblox Studio's [Explorer](studio/explorer.md) are the primary windows for organizing elements in 3D scenes:
+Unity's Hierarchy View and Roblox Studio's [Explorer](studio/explorer.md) are the primary windows for organizing elements in 3D scenes:
 
 - Both allow you to manage and organize objects (for example, characters and environmental assets).
 - Both use a tree structure for the parent-child relationships between objects.
 
-However, Hierarchy view has no predefined structure, whereas Explorer has a strict structure. It might help to think of Explorer as a combination of Unity's Hierarchy view and Project window, with the Workspace folder as the most recognizable element.
+However, Hierarchy View has no predefined structure, whereas Explorer has a strict structure. It might help to think of Explorer as a combination of Unity's Hierarchy View and Project window, with the Workspace folder as the most recognizable element.
 
 Similarly, the Roblox Studio [Asset Manager](projects/assets/manager.md) and [Toolbox](projects/assets/toolbox.md) overlap with the Unity Project window. The Asset Manager lets you manage all assets within your experience, whereas the Toolbox lets you access any assets you've published. The Toolbox also lets you search the Creator Marketplace for assets from Roblox or the community, similar to the Unity Asset Store.
 
@@ -31,7 +31,7 @@ You can see the difference immediately if you create a `GameObject` and a `Part`
 
 In that sense, you might consider Unity development as additive and Roblox development as subtractive. `GameObjects` are generic containers for any number of components. You mix and match components as necessary to achieve your desired appearance and behavior. Roblox handles things like physics and lighting by default, so modifying its systems means removing or overwriting functionality rather than just adding it where it didn't previously exist.
 
-Another useful comparison is the Unity `GameObject`to the Roblox `Class.Model`. Models act as a container for a collection of interconnected parts in the same way that you might establish a parent-child relationship between many `GameObjects` in Unity. You specify one of the model's parts as its [primary part](parts/models.md#setting-a-primary-part) to define the pivot point. Models also hold scripts, animations, sound effects, prompts, constraints, particle emitters, and more.
+Another useful comparison is the Unity `GameObject` to the Roblox `Class.Model`. Models act as a container for a collection of interconnected parts in the same way that you might establish a parent-child relationship between many `GameObjects` in Unity. You specify one of the model's parts as its [primary part](parts/models.md#setting-a-primary-part) to define the pivot point. Models also hold scripts, animations, sound effects, prompts, constraints, particle emitters, and more.
 
 For example, a Unity `GameObject` might have components for `ParticleSystem`, `Physics3D`, `SpringConstraint`, and a script. In the Hierarchy window, you see a single `GameObject` named `SpringyFireball`. The Inspector window shows the collection of components and properties.
 
@@ -46,7 +46,7 @@ Model
 |  |- Script
 ```
 
-Roblox's physics-by-default philosophy extends to the process of building 3D models. In Roblox, welding multiple parts together into an [assembly](physics/assemblies.md) is an excellent way to quickly build things, because Roblox treats the welded parts as a single rigid body. In Unity, a similar approach might cause performance issues or odd physics interactions.
+Roblox's physics-by-default philosophy extends to the process of building 3D models. In Roblox, welding multiple parts together into an [assembly](physics/assemblies.md) is an excellent way to quickly build things because Roblox treats the welded parts as a single rigid body. In Unity, a similar approach might cause performance issues or odd physics interactions.
 
 ## Location Matters
 
